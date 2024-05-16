@@ -6,7 +6,9 @@
     "openapi-rq": "dist/cli.mjs"
   },
   "type": "module",
-  "workspaces": ["examples/*"],
+  "workspaces": [
+    "examples/*"
+  ],
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.json",
     "lint": "biome check .",
@@ -23,7 +25,9 @@
   },
   "homepage": "https://github.com/7nohe/openapi-react-query-codegen",
   "bugs": "https://github.com/7nohe/openapi-react-query-codegen/issues",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "codegen",
     "react-query",
@@ -37,7 +41,7 @@
   "author": "Daiki Urata (@7nohe)",
   "license": "MIT",
   "dependencies": {
-    "@hey-api/openapi-ts": "0.43.0"
+    "@hey-api/openapi-ts": "0.45.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.2",
@@ -48,6 +52,7 @@
     "lefthook": "^1.6.10",
     "rimraf": "^5.0.5",
     "ts-morph": "^22.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vitest": "^1.5.0"
   },
